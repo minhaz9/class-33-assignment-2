@@ -1,0 +1,128 @@
+* {
+  font-family: spartan;
+}
+
+.navbar {
+  background: #ddd;
+}
+
+.navbar .container-xxl .collapse ul li {
+  margin: 0 .2rem;
+}
+
+.navbar .container-xxl .collapse ul li a {
+  color: black;
+  position: relative;
+}
+
+.navbar .container-xxl .collapse ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  right: 25%;
+  height: 2px;
+  width: 0%;
+  transition: .5s;
+  background: blue;
+}
+
+.navbar .container-xxl .collapse ul li ul {
+  display: inline-block;
+  transform: translateY(4rem);
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+  padding: 0;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.137);
+}
+
+.navbar .container-xxl .collapse ul li ul li {
+  display: block;
+  margin: 0.5rem !important;
+}
+
+.navbar .container-xxl .collapse ul li ul li a {
+  padding-right: 0.5rem;
+  font-weight: 500;
+  transition: .4s;
+  width: 13rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: block;
+  border-radius: 5px;
+  position: relative;
+}
+
+.navbar .container-xxl .collapse ul li ul li a::before {
+  content: "";
+  position: absolute;
+  background: transparent;
+}
+
+.navbar .container-xxl .collapse ul li ul li a:hover {
+  background: #1657e4;
+  letter-spacing: .1rem;
+  color: white;
+}
+
+.navbar .container-xxl .collapse ul li:hover a {
+  color: blueviolet;
+}
+
+.navbar .container-xxl .collapse ul li:hover a::before {
+  width: 50%;
+}
+
+.navbar .container-xxl .collapse ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+.banner {
+  padding: 4.2rem 0;
+  position: fixed;
+  width: 100%;
+}
+
+.dak {
+  background: black;
+  width: 2rem;
+  height: 0.05rem;
+  margin-bottom: 0.2rem;
+  display: inline-block;
+}
+
+.follow {
+  position: relative;
+  top: 5rem;
+}
+
+.follow_icon {
+  display: inline-block;
+}
+
+.follow_icon ul li {
+  display: inline-block;
+  margin: 0 0.8rem;
+}
+
+.follow_icon ul li i {
+  transition: .4s;
+}
+
+.follow_icon ul li:hover i {
+  color: red;
+}
+
+.image {
+  margin-top: -8rem;
+}
+
+.image img {
+  width: 122%;
+  height: 713px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
